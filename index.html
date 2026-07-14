@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elastic Alerting Resources</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #fafafa;
+      color: #1a1a2e;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: #00bfb3;
+      color: #fff;
+      padding: 2rem 1.5rem 1.5rem;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    header p {
+      margin-top: 0.4rem;
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    main {
+      flex: 1;
+      max-width: 860px;
+      width: 100%;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .section-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #555;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 0.4rem;
+    }
+
+    .resource-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .resource-card {
+      background: #fff;
+      border: 1px solid #e5e5e5;
+      border-radius: 8px;
+      padding: 1.2rem 1.4rem;
+      text-decoration: none;
+      color: inherit;
+      transition: box-shadow 0.15s, border-color 0.15s;
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+
+    .resource-card:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      border-color: #00bfb3;
+    }
+
+    .resource-card .card-title {
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    .resource-card .card-desc {
+      font-size: 0.875rem;
+      color: #666;
+    }
+
+    .empty-state {
+      color: #888;
+      font-size: 0.95rem;
+      font-style: italic;
+      padding: 1rem 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.8rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Elastic Alerting Resources</h1>
+    <p>Publicly available web pages, diagrams, and references related to Elastic alerting.</p>
+  </header>
+
+  <main>
+    <h2 class="section-title">Resources</h2>
+    <div class="resource-grid" id="resource-grid">
+      <!-- Add links to new pages here as the site grows, e.g.:
+      <a class="resource-card" href="./diagrams/rule-lifecycle.html">
+        <span class="card-title">Rule Lifecycle Diagram</span>
+        <span class="card-desc">Visual walkthrough of how an alerting rule moves through its lifecycle.</span>
+      </a>
+      -->
+      <p class="empty-state">No resources yet — check back soon.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>Elastic Alerting &mdash; <a href="https://github.com/elastic/alerting">GitHub</a></p>
+  </footer>
+</body>
+</html>
